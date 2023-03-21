@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 /*program to produce histogram based on digitst from 0 to 9*/
+/*  version 2.0 */
+
 void main()
 {
     int c, i, j;
@@ -10,14 +12,18 @@ void main()
         ndigit[i] = 0;
 
     while ((c = getchar()) != EOF)
+    {
         if (c >= '0' && c <= '9')
             ++ndigit[c - '0'];
-
-    for (i = 0; i < 10; ++i)
-    {   
-        printf("%d\n", i);
-        for (j = 0; j < ndigit[i]; j++)
-             printf("=");
-        
+    }
+    for (i = 0; i < 10; i++)
+    {
+        for (j = 0; j <= ndigit[i]; ++j)
+        {
+            if (ndigit[i] != 0)
+                printf("=");
+        }
+        if (ndigit[i] != 0)
+            printf("%d\n", i);
     }
 }
