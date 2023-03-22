@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*program to produce histogram based on digitst from 0 to 9*/
+/*program to produce histogram - based on how many times digitst from 0 to 9 are typed*/
 /*  version 2.0 */
 
 void main()
