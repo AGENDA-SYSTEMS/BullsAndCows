@@ -1,5 +1,6 @@
 #include <stdio.h>
-/* program to convert Fahrenheit to Cesius with custom written function*/
+/* program to convert Fahrenheit to Cesius with custom written function v2 */
+
 
 float tconv(float f);
 
