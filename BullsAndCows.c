@@ -26,14 +26,7 @@ int main()
       {
         printf("====PLAYER ONE - ENTER NUMBER FROM 0 to 9====DIGIT:%d\n", i + 1);
         scanf("%1d", &player_one_numbers[i]);
-      }
-      else
-      {
-        printf("====PLAYER TWO - GUESS NUMBER FROM 0 to 9====DIGIT:%d\n", i + 1);
-        scanf("%1d", &player_two_numbers[i]);
-      }
-
-      if (i > 0)
+        if (i > 0)
       {
         for (int j = i; j > 0; j--)
         {
@@ -44,6 +37,25 @@ int main()
           }
         }
       }
+      }
+      else
+      {
+        printf("====PLAYER TWO - GUESS NUMBER FROM 0 to 9====DIGIT:%d\n", i + 1);
+        scanf("%1d", &player_two_numbers[i]);
+        if (i > 0)
+      {
+        for (int j = i; j > 0; j--)
+        {
+          if (j == player_two_numbers[i])
+          {
+            printf("===ERROR SAME NUNBER===");
+            return 0;
+          }
+        }
+      }
+      }
+
+      
     }
     player_id++;
     if (player_id > 1)
