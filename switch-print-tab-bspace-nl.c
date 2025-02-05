@@ -6,7 +6,7 @@ int main(void)
 {
     char ch;
 
-    while(1) {
+     do {
 
         ch = getche();
 
@@ -17,8 +17,8 @@ int main(void)
                 break;
             case'\t':printf(" TAB\n"); 
         }
-        if(ch=='\r' ) break;
-    }
+        
+    } while (ch !='\r');
 
     return 0;
 }
