@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int series(void);
+
+int main(void)
+{
+    int i;
+    
+    for(i=0; i<10; i++) printf("%d ", series());
+
+    return 0;
+}
+
+// this is wrong
+int series(void)
+{
+    int total;
+
+    total = (total + 1423) % 1422;
+    return total;
+}
