@@ -6,7 +6,7 @@
 #include <sys/types.h>
 
 void process_file(const char *input_file) {
-    char output_dir[] = "ConverteddDataFiles_";
+    char output_dir[] = "ConvertedDataFiles_";
     mkdir(output_dir);
     
     char output_file[256];
